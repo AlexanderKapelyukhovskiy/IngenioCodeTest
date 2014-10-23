@@ -64,7 +64,7 @@ namespace Ingenio.CodeTest.Tool
                 var categories = service.GetCategoriesByLevel(level);
                 if (categories != null && categories.Length > 0)
                 {
-                    var sb = new StringBuilder(categories[0]);
+                    var sb = new StringBuilder(categories[0].ToString());
                     for (int i = 1; i < categories.Length; i++)
                     {
                         sb.AppendFormat(", {0}", categories[i]);
